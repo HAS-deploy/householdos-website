@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — HouseholdOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">HouseholdOS</a>
+    <nav>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div style="clear:both"></div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: 2026-04-17.</p>
+
+  <p>HouseholdOS is a local-first app. There is no server, no account, and no cloud sync. Your bills, tasks, documents, and expirations stay on your device.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No account creation. No email, phone number, or profile.</li>
+    <li>No analytics SDK, no crash reporter, no ad network.</li>
+    <li>No transmission of your bills, tasks, documents, or expirations to any server.</li>
+    <li>No tracking across apps or websites.</li>
+  </ul>
+
+  <h2>What's stored on your device</h2>
+  <ul>
+    <li><strong>Local database</strong> — your household, members, bills, tasks, and expirations live in a SwiftData store inside the app's iOS sandbox.</li>
+    <li><strong>Encrypted document vault</strong> — files you import are encrypted with AES-GCM before being written to disk. The encryption key is held in the iOS Keychain with <code>kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly</code>.</li>
+    <li><strong>Local notifications</strong> — reminders are scheduled on-device via iOS. No push server is involved.</li>
+  </ul>
+
+  <h2>Permissions the app may request</h2>
+  <ul>
+    <li><strong>Face ID / Touch ID</strong> — only if you enable app lock or sensitive-documents mode.</li>
+    <li><strong>Camera / Photo Library</strong> — only if you attach a photo to a document or receipt.</li>
+    <li><strong>Notifications</strong> — only when you opt in to reminders.</li>
+  </ul>
+
+  <h2>Anonymous product metrics</h2>
+  <p>HouseholdOS can record <em>anonymous</em> usage metrics (e.g. "user opened the dashboard", "user added their first bill") to help us understand how the app is used and improve it. Every metric property uses a fixed, bounded alphabet; the app's code specifically prevents any user-entered text (names, titles, amounts, descriptions) from being attached to a metric. You can turn metrics off in Settings → Analytics.</p>
+
+  <h2>In-App Purchases</h2>
+  <p>HouseholdOS offers an optional upgrade — HouseholdOS Plus — as a monthly subscription, yearly subscription, or one-time lifetime unlock. Purchases are handled entirely by Apple through the App Store. HouseholdOS never sees your name, address, or payment method. The app verifies the purchase with Apple's StoreKit on device; no purchase data leaves your device except to Apple.</p>
+  <p>If you subscribe, Apple renews the subscription until you cancel it in the App Store. Lifetime is a one-time purchase with no renewal.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Export</strong> — Settings → Data → Export JSON writes a single readable file you control.</li>
+    <li><strong>Delete</strong> — Settings → Delete all data removes the database, the encrypted vault, and the Keychain key. This is final.</li>
+    <li><strong>Metrics kill-switch</strong> — Settings → Analytics.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>HouseholdOS is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>We will update this page with a new "Last updated" date when anything material changes.</p>
+
+  <footer>
+    &copy; 2026 HouseholdOS &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="support.html">Support</a>
+  </footer>
+</body>
+</html>
